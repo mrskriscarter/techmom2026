@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Contact Form</title>
+
+        <!-- Connect our CSS file -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Connect our JavaScript file -->
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+
+
+        <form id="contactForm">
+
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+
+            <!-- Choose contact method -->
+            <p class="contact-label">How should we contact you?</p>
+
+            <div class="contact-toggle">
+                <label>
+                    <input type="radio" name="contactMethod" value="email" checked>
+                    Email
+                </label>
+
+                <label>
+                    <input type="radio" name="contactMethod" value="phone">
+                    Phone
+                </label>
+            </div>
+
+            <!-- Email field -->
+            <div id="emailField">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <!-- Phone field -->
+            <div id="phoneField" hidden>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+
+
+            <label for="subject">How can we help?</label>
+
+            <select id="subject" name="subject" required>
+                <option value="">Select a reason</option>
+                <option value="General Question">General Question</option>
+                <option value="Request a Quote">Request a Quote</option>
+                <option value="Customer Support">Customer Support</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <div id="formStatus"></div>
+
+
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Link JavaScript-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
